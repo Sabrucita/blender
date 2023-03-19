@@ -3,3 +3,20 @@
   padding: 0;
   margin: 0;
 }
+
+.blender{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+  height: 500px;
+  background-color: red;
+}
+
+.blenderBtn{
+  width: 70px;
+  height: 70px;
+  margin: 350px auto 0px;
+  background-color: blue;
+}
