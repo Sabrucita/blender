@@ -9,14 +9,20 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  width: 250px;
+  width: 700px;
   height: 500px;
-  background-color: red;
+  background-image: url('./imgs/blenderOff.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blenderActive{
+  background-image: url('./imgs/blenderOn.gif');
 }
 
 .blenderBtn{
   width: 70px;
   height: 70px;
   margin: 350px auto 0px;
-  background-color: blue;
 }

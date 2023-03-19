@@ -1,14 +1,30 @@
 let blenderStatus = 'off'
 const blender = document.getElementById('blender')
+const blenderBtnSound = document.getElementById('blenderBtnSound')
+const blenderSound = document.getElementById('blenderSound')
+
 document.getElementById('blenderBtn').addEventListener('click', blenderCtrl)
 
 
 function blenderCtrl() {
   if(blenderStatus === 'off'){
     blenderStatus = 'on'
-    console.log('toy prendida');
+    blenderSoundsStatus()
+    blender.classList.add('blenderActive')
   } else {
     blenderStatus = 'off'
-    console.log('toy apagada');
+    blenderSoundsStatus()
+    blender.classList.remove('blenderActive')
+  }
+}
+
+function blenderSoundsStatus() {
+  if(blenderSound.paused){
+    blenderBtnSound.play()
+    blenderSound.play()
+  } else{
+    blenderBtnSound.play()
+    blenderSound.pause()
+    blenderSound.currentTime = 0
   }
 }
